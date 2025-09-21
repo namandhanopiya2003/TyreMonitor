@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FF007F"
+            android:backgroundTint="@android:color/black"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Maintenance Guidelines"
+            android:gravity="right"
+            android:textColor="#B8B8B8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:paddingTop="7dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                android:padding="16dp"
+                app:cardBackgroundColor="#50000000">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGuidelinesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tyre Maintenance Guidelines"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/tvGuidelinesContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Regularly check tyre pressure.\n\n• Inspect tyres for wear and tear.\n\n• Rotate tyres every 5,000–8,000 km.\n\n• Replace tyres when tread depth is below 1.6 mm.\n\n• Avoid overloading the vehicle.\n\n• Keep wheels properly aligned.\n\n• Ensure tyres are properly inflated for fuel efficiency.\n\n• Check tyre sidewalls for cuts, cracks, or bulges.\n\n• Avoid sudden braking or sharp turns that damage tyres.\n\n• Maintain proper suspension and wheel alignment.\n\n• Balance tyres to prevent uneven wear.\n\n• Store spare tyres in a cool, dry place.\n\n• Follow manufacturer’s recommendations for tyre lifespan.\n\n• Inspect tyres before long trips or harsh conditions.\n\n• Use seasonal tyres when necessary.\n\n• Regular cleaning and removal of debris from tyre treads."
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCopyGuidelines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Guidelines"
+                android:textColor="#00CED1"
+                android:backgroundTint="#000000"
+                app:cornerRadius="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
