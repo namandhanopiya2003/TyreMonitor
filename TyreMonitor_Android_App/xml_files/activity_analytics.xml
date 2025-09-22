@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FF007F"
+            android:backgroundTint="@android:color/black"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Analytics"
+            android:gravity="right"
+            android:textColor="#B8B8B8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:paddingTop="7dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We ran a detailed ML analysis on your vehicles' tyres. Here is the analysis report."
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/llTyresContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvFooterHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMMARY OF YOUR TYRES:"
+            android:textColor="#B8B8B8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalVehicles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Total Vehicles: 0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAveragePressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Average Tyre Pressure: 0 PSI"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Vehicles Needing Attention: 0"
+            android:textColor="#B22222"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
