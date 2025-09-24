@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/black">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FF007F"
+            android:backgroundTint="@android:color/black"
+            android:paddingTop="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="My Vehicles"
+            android:gravity="right"
+            android:textColor="#B8B8B8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:paddingTop="7dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVehicles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/footerBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="0dp">
+
+        <Button
+            android:id="@+id/btnAnalytics"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ANALYTICS"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textAllCaps="false"
+            android:textColor="#FF007F"
+            android:backgroundTint="@android:color/black"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</LinearLayout>
