@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Dumper 1",
+    "regNo": "DUMMY-1111",
+    "tyrePressure": 32.0,
+    "tyreAge": "1.0",
+    "loadCapacity": "0.9"
+  },
+  {
+    "name": "Dumper 2",
+    "regNo": "DUMMY-2222",
+    "tyrePressure": 25.0,
+    "tyreAge": "4.0",
+    "loadCapacity": "1.2"
+  },
+  {
+    "name": "Dumper 3",
+    "regNo": "DUMMY-3333",
+    "tyrePressure": 16.0,
+    "tyreAge": "10.0",
+    "loadCapacity": "2.0"
+  },
+  {
+    "name": "Dumper 4",
+    "regNo": "DUMMY-4444",
+    "tyrePressure": 42.0,
+    "tyreAge": "1.0",
+    "loadCapacity": "0.9"
+  },
+  {
+    "name": "Dumper 5",
+    "regNo": "DUMMY-5555",
+    "tyrePressure": 28.0,
+    "tyreAge": "8.0",
+    "loadCapacity": "1.5"
+  },
+  {
+    "name": "Dumper 6",
+    "regNo": "DUMMY-6666",
+    "tyrePressure": 24.0,
+    "tyreAge": "7.0",
+    "loadCapacity": "1.55"
+  }
+]
