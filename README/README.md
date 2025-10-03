@@ -143,14 +143,14 @@ TrainedModel/<br>
 
 ## ✨ SAMPLE OUTPUT ==>
 
-{
-  "tyre_pressure": 46 PSI,
-  "tyre_age": 7 years
-  "load_weight": 2.1 tonne
-}
+{<br>
+  "tyre_pressure": 46 PSI,<br>
+  "tyre_age": 7 years<br>
+  "load_weight": 2.1 tonne<br>
+}<br>
 
-🤖 Prediction: "Critical"
-📊 Health Score: 42 / 100
+🤖 Prediction: "Critical"<br>
+📊 Health Score: 42 / 100<br>
 
 ---
 
@@ -160,3 +160,4 @@ For questions or feedback, feel free to reach out!
 
 
 ---
+
