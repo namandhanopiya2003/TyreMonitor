@@ -36,82 +36,80 @@ Model Deployment:
 
 ## 📁 FILES INCLUDED ==>
 
-TyreMonitor/
-|
-|
-├──----- activity_about_app.xml
-|    ├── activity_analytics.xml
-|    ├── activity_feedback.xml
-|    ├── activity_help.xml
-|    ├── activity_login.xml
-|    ├── activity_main_menu.xml
-|    ├── activity_maintenance_guidelines.xml
-|    ├── activity_profile.xml
-|    ├── activity_usage_policy.xml
-|    ├── activity_vehicle_details.xml
-|    ├── activity_vehicles_list.xml
-|    └── activity_vehicles.xml
-|
-|
-├──----- AboutAppActivity.kt 
-|    ├── AnalyticsActivity.kt
-|    ├── FeedbackActivity.kt
-|    ├── HelpActivity.kt
-|    ├── LoginActivity.kt
-|    ├── MainMenuActivity.kt
-|    ├── MaintenanceGuidelinesActivity.kt
-|    ├── ProfileActivity.kt
-|    ├── UsagePolicyActivity.kt
-|    ├── Vehicle.kt
-|    ├── VehicleAdapter.kt
-|    ├── VehicleDetailsActivity.kt
-|    └── VehiclesListActivity.kt
-|
-|
-├──----- background_image
-|    ├── background_image_login
-|    └── background_image_profile
-|
-|
-├──----- vehicle_model.tflite
-│
-|
-└──----- vehicles.json
+TyreMonitor/<br>
+|<br>
+|<br>
+├──----- activity_about_app.xml<br>
+|    ├── activity_analytics.xml<br>
+|    ├── activity_feedback.xml<br>
+|    ├── activity_help.xml<br>
+|    ├── activity_login.xml<br>
+|    ├── activity_main_menu.xml<br>
+|    ├── activity_maintenance_guidelines.xml<br>
+|    ├── activity_profile.xml<br>
+|    ├── activity_usage_policy.xml<br>
+|    ├── activity_vehicle_details.xml<br>
+|    ├── activity_vehicles_list.xml<br>
+|    └── activity_vehicles.xml<br>
+|<br>
+|<br>
+├──----- AboutAppActivity.kt<br> 
+|    ├── AnalyticsActivity.kt<br>
+|    ├── FeedbackActivity.kt<br>
+|    ├── HelpActivity.kt<br>
+|    ├── LoginActivity.kt<br>
+|    ├── MainMenuActivity.kt<br>
+|    ├── MaintenanceGuidelinesActivity.kt<br>
+|    ├── ProfileActivity.kt<br>
+|    ├── UsagePolicyActivity.kt<br>
+|    ├── Vehicle.kt<br>
+|    ├── VehicleAdapter.kt<br>
+|    ├── VehicleDetailsActivity.kt<br>
+|    └── VehiclesListActivity.kt<br>
+|<br>
+|<br>
+├──----- background_image<br>
+|    ├── background_image_login<br>
+|    └── background_image_profile<br>
+|<br>
+|<br>
+├──----- vehicle_model.tflite<br>
+│<br>
+|<br>
+└──----- vehicles.json<br>
 
 
 
-
-
-TrainedModel/
-|
-|
-├── data/
-|    └── vehicles.json
-| 
-|
-├── models/
-|    ├── vehicle_model.h5
-|    └── vehicle_model.tflite
-|    
-|    
-├── src/
-|    ├── predict.py
-|    ├── preprocess.py
-|    └── train_model.py
-|
-|
-├── venv/
-|
-|
-├── check_dataset.py
-|
-|
-├── convert_to_tflite
-|
-|
-├── generate_training_data.py
-|
-|
+TrainedModel/<br>
+|<br>
+|<br>
+├── data/<br>
+|    └── vehicles.json<br>
+|<br>
+|<br>
+├── models/<br>
+|    ├── vehicle_model.h5<br>
+|    └── vehicle_model.tflite<br>
+|<br>
+|<br>
+├── src/<br>
+|    ├── predict.py<br>
+|    ├── preprocess.py<br>
+|    └── train_model.py<br>
+|<br>
+|<br>
+├── venv/<br>
+|<br>
+|<br>
+├── check_dataset.py<br>
+|<br>
+|<br>
+├── convert_to_tflite<br>
+|<br>
+|<br>
+├── generate_training_data.py<br>
+|<br>
+|<br>
 └── requirements.txt
 
 ---
@@ -159,5 +157,6 @@ TrainedModel/
 ## 📬 CONTACT ==>
 
 For questions or feedback, feel free to reach out!
+
 
 ---
