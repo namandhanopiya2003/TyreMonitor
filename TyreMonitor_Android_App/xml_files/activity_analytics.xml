@@ -1,3 +1,4 @@
+<!-- Main layout for the Analytics screen -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -5,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_image">
 
+    <!-- Top bar with a back button and title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -13,6 +15,7 @@
         android:gravity="center_vertical"
         android:background="#000000">
 
+        <!-- Button that lets user go back -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -22,6 +25,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Text title shown on the top bar -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -35,6 +39,7 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Short description of what this screen shows -->
     <TextView
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
@@ -44,6 +49,7 @@
         android:padding="16dp"
         android:textSize="16sp"/>
 
+    <!-- Scrollable area where analysis results will appear -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -51,6 +57,7 @@
         android:scrollbars="vertical"
         android:padding="16dp">
 
+        <!-- Container where tyre cards will be added dynamically -->
         <LinearLayout
             android:id="@+id/llTyresContainer"
             android:orientation="vertical"
@@ -58,6 +65,7 @@
             android:layout_height="wrap_content"/>
     </ScrollView>
 
+    <!-- Bottom section showing overall summary -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -65,6 +73,7 @@
         android:background="#000000"
         android:padding="12dp">
 
+        <!-- Heading for the summary section -->
         <TextView
             android:id="@+id/tvFooterHeading"
             android:layout_width="wrap_content"
@@ -75,6 +84,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
 
+        <!-- Shows total vehicles in this analysis -->
         <TextView
             android:id="@+id/tvTotalVehicles"
             android:layout_width="wrap_content"
@@ -84,6 +94,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="4dp"/>
 
+        <!-- Shows average tyre pressure across vehicles -->
         <TextView
             android:id="@+id/tvAveragePressure"
             android:layout_width="wrap_content"
@@ -93,6 +104,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="4dp"/>
 
+        <!-- Shows number of vehicles that need attention -->
         <TextView
             android:id="@+id/tvAttention"
             android:layout_width="wrap_content"
