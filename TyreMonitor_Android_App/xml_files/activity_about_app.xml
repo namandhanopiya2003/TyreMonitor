@@ -1,3 +1,4 @@
+<!-- Main layout for About screen -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
+    <!-- Top bar with back button and title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
         android:gravity="center_vertical"
         android:background="#000000">
 
+        <!-- Back button -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -23,6 +26,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Screen title -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,17 +40,20 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Scrollable content area -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="16dp">
 
+        <!-- Content wrapper -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Card with app information -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,11 +63,13 @@
                 android:padding="16dp"
                 app:cardBackgroundColor="#50000000">
 
+                <!-- Text content inside card -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <!-- Section title -->
                     <TextView
                         android:id="@+id/tvAboutTitle"
                         android:layout_width="match_parent"
@@ -73,6 +82,7 @@
                         android:paddingLeft="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- About app description -->
                     <TextView
                         android:id="@+id/tvAboutContent"
                         android:layout_width="match_parent"
@@ -86,6 +96,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Button to copy about info -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCopyAbout"
                 android:layout_width="wrap_content"
