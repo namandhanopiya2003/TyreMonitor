@@ -1,3 +1,4 @@
+<!-- Main screen layout with vertical orientation and background image -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
+    <!-- Top bar: back button on the left, screen title on the right -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
         android:gravity="center_vertical"
         android:background="#000000">
 
+        <!-- Back button for navigation -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -23,6 +26,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Title text for this screen -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,6 +40,7 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Scrollable section to hold the actual help/FAQ content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -46,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Page heading -->
             <TextView
                 android:id="@+id/tvHelpTitle"
                 android:layout_width="wrap_content"
@@ -56,12 +62,14 @@
                 android:paddingBottom="16dp"
                 android:textColor="@android:color/black"/>
 
+            <!-- Intro section with a welcome note and quick bullets -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingBottom="16dp">
 
+                <!-- Intro title -->
                 <TextView
                     android:id="@+id/tvHelpIntroTitle"
                     android:layout_width="wrap_content"
@@ -72,6 +80,7 @@
                     android:paddingBottom="8dp"
                     android:textColor="@android:color/black"/>
 
+                <!-- Introductory points about app usage -->
                 <TextView
                     android:id="@+id/tvHelpIntro1"
                     android:layout_width="match_parent"
@@ -109,6 +118,7 @@
                     android:textColor="@android:color/black"/>
             </LinearLayout>
 
+            <!-- FAQ item 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -149,6 +159,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- FAQ item 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,6 +200,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- FAQ item 3 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -229,6 +241,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- FAQ item 4 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
