@@ -1,3 +1,4 @@
+<!-- Main layout for the Feedback screen -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -5,6 +6,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
+    <!-- Top bar with a back button and title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -13,6 +15,7 @@
         android:gravity="center_vertical"
         android:background="#000000">
 
+        <!-- Button that lets user go back -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -22,6 +25,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Text title shown on the top bar -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -35,16 +39,19 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Scrollable area for the feedback form -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <!-- Container holding feedback fields -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Message encouraging users to share feedback -->
             <TextView
                 android:id="@+id/tvFeedbackTitle"
                 android:layout_width="wrap_content"
@@ -55,6 +62,7 @@
                 android:paddingBottom="16dp"
                 android:textColor="@android:color/black"/>
 
+            <!-- Text box for writing feedback -->
             <EditText
                 android:id="@+id/etFeedback"
                 android:layout_width="match_parent"
@@ -69,6 +77,7 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"/>
 
+            <!-- Section for rating the app -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,6 +85,7 @@
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="16dp">
 
+                <!-- Text above the rating stars -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,6 +94,7 @@
                     android:paddingBottom="8dp"
                     android:textColor="@android:color/black"/>
 
+                <!-- 5-star rating bar -->
                 <RatingBar
                     android:id="@+id/ratingBar"
                     android:layout_width="wrap_content"
@@ -93,6 +104,7 @@
                     android:rating="0"/>
             </LinearLayout>
 
+            <!-- Button to submit feedback -->
             <Button
                 android:id="@+id/btnSubmitFeedback"
                 android:layout_width="match_parent"
