@@ -1,3 +1,4 @@
+<!-- Root container with vertical orientation and background -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,6 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
+    <!-- Top bar with back button and title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
         android:gravity="center_vertical"
         android:background="#000000">
 
+        <!-- Back button -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -23,6 +26,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Screen title -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,17 +40,20 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Scrollable content area -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="16dp">
 
+        <!-- Content container -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Card showing guidelines -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,6 +68,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <!-- Card title -->
                     <TextView
                         android:id="@+id/tvGuidelinesTitle"
                         android:layout_width="match_parent"
@@ -73,6 +81,7 @@
                         android:paddingTop="5dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Guidelines text content -->
                     <TextView
                         android:id="@+id/tvGuidelinesContent"
                         android:layout_width="match_parent"
@@ -86,6 +95,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Button to copy guidelines -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCopyGuidelines"
                 android:layout_width="wrap_content"
