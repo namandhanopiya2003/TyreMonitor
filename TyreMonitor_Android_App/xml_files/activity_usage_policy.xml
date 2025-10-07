@@ -1,3 +1,4 @@
+<!-- Root layout: whole screen uses vertical orientation with background -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -5,6 +6,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
+    <!-- Top bar: Back button + title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -35,6 +37,7 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- Scrollable content area for policy text -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -46,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- CardView to hold the usage policy details -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +64,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <!-- Title of usage policy -->
                     <TextView
                         android:id="@+id/tvUsagePolicyTitle"
                         android:layout_width="match_parent"
@@ -72,6 +77,7 @@
                         android:paddingTop="5dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 1: Introduction -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -83,6 +89,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 2: User Conduct -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -93,6 +100,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 3: Privacy -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -103,6 +111,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 4: Content Usage -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,6 +122,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 5: Prohibited Actions -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -123,6 +133,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 6: Account Responsibility -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -133,6 +144,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 7: Limitation of Liability -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -143,6 +155,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 8: Changes to Policy -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -153,6 +166,7 @@
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"/>
 
+                    <!-- Section 9: Contact information -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -165,6 +179,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Button to allow user to copy full policy -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCopyPolicy"
                 android:layout_width="wrap_content"
