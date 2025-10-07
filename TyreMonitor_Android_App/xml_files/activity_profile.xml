@@ -1,3 +1,4 @@
+<!-- Root layout for profile screen with background image -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -5,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_image_profile">
 
+    <!-- Scrollable content section -->
     <ScrollView
         android:id="@+id/scrollContent"
         android:layout_width="match_parent"
@@ -17,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Header bar with back button and title -->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -47,6 +50,7 @@
                     android:paddingTop="7dp"/>
             </LinearLayout>
 
+            <!-- Profile information card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,6 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <!-- Name section -->
                     <TextView
                         android:id="@+id/tvName"
                         android:layout_width="wrap_content"
@@ -89,6 +94,7 @@
                         android:background="#50000000"
                         android:layout_marginBottom="8dp"/>
 
+                    <!-- Role section -->
                     <TextView
                         android:id="@+id/tvRole"
                         android:layout_width="wrap_content"
@@ -117,6 +123,7 @@
                         android:background="#50000000"
                         android:layout_marginBottom="8dp"/>
 
+                    <!-- Contact section -->
                     <TextView
                         android:id="@+id/tvContact"
                         android:layout_width="wrap_content"
@@ -139,6 +146,7 @@
                         android:visibility="gone"
                         android:layout_marginBottom="16dp"/>
 
+                    <!-- Edit button -->
                     <Button
                         android:id="@+id/btnEdit"
                         android:layout_width="match_parent"
@@ -157,6 +165,7 @@
         </LinearLayout>
     </ScrollView>
 
+    <!-- Footer with quick links and logout -->
     <LinearLayout
         android:id="@+id/footer"
         android:orientation="vertical"
@@ -174,6 +183,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="8dp"/>
 
+        <!-- Footer buttons -->
         <Button
             android:id="@+id/btnUsagePolicy"
             android:layout_width="match_parent"
