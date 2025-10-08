@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Root layout for Vehicles List screen -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -6,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_image">
 
+    <!-- Header Bar with Back button and Title -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
         android:gravity="center_vertical"
         android:background="@android:color/black">
 
+        <!-- Back button -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -23,6 +26,7 @@
             android:backgroundTint="@android:color/black"
             android:paddingTop="7dp"/>
 
+        <!-- Screen title -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,6 +40,7 @@
             android:paddingTop="7dp"/>
     </LinearLayout>
 
+    <!-- RecyclerView to display list of vehicles -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvVehicles"
         android:layout_width="match_parent"
@@ -44,6 +49,7 @@
         android:padding="8dp"
         />
 
+    <!-- Footer Bar with Analytics and Profile buttons -->
     <LinearLayout
         android:id="@+id/footerBar"
         android:orientation="horizontal"
@@ -54,6 +60,7 @@
         android:paddingVertical="12dp"
         android:paddingHorizontal="0dp">
 
+        <!-- Analytics button -->
         <Button
             android:id="@+id/btnAnalytics"
             android:layout_width="0dp"
@@ -65,6 +72,7 @@
             android:backgroundTint="@android:color/black"
             android:layout_margin="8dp"/>
 
+        <!-- Profile button -->
         <Button
             android:id="@+id/btnProfile"
             android:layout_width="0dp"
