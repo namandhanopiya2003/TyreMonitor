@@ -9,12 +9,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
 
+    // This keeps track of whether the password is shown or hidden
     private var isPasswordVisible = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Gets all the views (buttons, text boxes, etc.) from the screen layout
         val etUsername = findViewById<EditText>(R.id.etUsername)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
@@ -22,10 +24,12 @@ class LoginActivity : AppCompatActivity() {
         val tvForgotPassword = findViewById<TextView>(R.id.tvForgotPassword)
         val ivTogglePassword = findViewById<ImageView>(R.id.ivTogglePassword)
 
+        // When the Login button is clicked
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString().trim()
             val password = etPassword.text.toString().trim()
 
+            // Checks if the username and password are correct
             if (username == "user" && password == "1234") {
                 val intent = Intent(this, MainMenuActivity::class.java)
                 intent.putExtra("USER_TYPE", "Admin")
@@ -36,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        // When the Guest Login button is clicked
         btnGuestLogin.setOnClickListener {
             Toast.makeText(this, "Logged in as Guest", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainMenuActivity::class.java)
@@ -44,6 +49,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
+        // When "Forgot Password" text is clicked
         tvForgotPassword.setOnClickListener {
             val username = etUsername.text.toString().trim()
 
@@ -58,6 +64,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        // Shows or hides password when the eye icon is clicked
         ivTogglePassword.setOnClickListener {
             isPasswordVisible = !isPasswordVisible
             if (isPasswordVisible) {
