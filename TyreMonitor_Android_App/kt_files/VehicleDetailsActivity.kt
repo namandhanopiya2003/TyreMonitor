@@ -8,12 +8,14 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+// This screen shows all details about one selected vehicle
 class VehicleDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vehicle_details)
 
+        // Gets the UI elements (TextViews, Buttons, etc.) from the layout
         val tvName = findViewById<TextView>(R.id.tvVehicleName)
         val tvReg = findViewById<TextView>(R.id.tvVehicleReg)
         val tvPressure = findViewById<TextView>(R.id.tvTyrePressure)
@@ -25,13 +27,16 @@ class VehicleDetailsActivity : AppCompatActivity() {
 
         val btnBack = findViewById<Button>(R.id.btnBack)
         btnBack.setOnClickListener {
+            // When back button is clicked, it goes back to the vehicle list screen
             startActivity(Intent(this, VehiclesListActivity::class.java))
             finish()
         }
 
+        // Gets the selected Vehicle object that was passed from the previous screen
         val vehicle = intent.getSerializableExtra("vehicle") as? Vehicle
 
         vehicle?.let {
+            // Shows the vehicle information in the text views
             tvName.text = "Name: ${it.name}"
             tvReg.text = "• Reg No: ${it.regNo}"
             tvPressure.text = "• Tyre Pressure: ${it.tyrePressure} PSI"
