@@ -13,26 +13,29 @@ import com.google.android.material.snackbar.Snackbar
 
 class UsagePolicyActivity : AppCompatActivity() {
 
+    // Takes the user back to the previous screen
     private lateinit var btnBack: Button
+    // Copies the usage policy text to the clipboard
     private lateinit var btnCopyPolicy: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_usage_policy)
 
+        // Finds the back button from the layout and set what it should do when clicked
         btnBack = findViewById(R.id.btnBack)
-
         btnBack.setOnClickListener {
             navigateBack()
         }
 
+        // Finds the copy policy button and set what it should do when clicked
         btnCopyPolicy = findViewById(R.id.btnCopyPolicy)
-
         btnCopyPolicy.setOnClickListener {
             copyPolicyToClipboard()
         }
     }
 
+    // Opens the main menu screen and closes the current one
     private fun navigateBack() {
         val intent = Intent(this, MainMenuActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -40,10 +43,12 @@ class UsagePolicyActivity : AppCompatActivity() {
         finish()
     }
 
+    // This makes sure pressing the device back button also takes the user to the main menu
     override fun onBackPressed() {
         navigateBack()
     }
 
+    // Copies the usage policy text and shows a message that it was copied
     private fun copyPolicyToClipboard() {
         val policyText = """
             1. Introduction
@@ -93,6 +98,7 @@ class UsagePolicyActivity : AppCompatActivity() {
         val clip = ClipData.newPlainText("Usage Policy", policyText)
         clipboard.setPrimaryClip(clip)
 
+        // Shows a small message to tell the user the text was copied
         Toast.makeText(this, "Policy copied to clipboard", Toast.LENGTH_SHORT).show()
     }
 }
